@@ -1,0 +1,119 @@
+/* --- Estilos do Header (Inalterado) --- */
+.website-header {
+    background-color: var(--unisenai-primario);
+    padding: 20px 0;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--unisenai-primario);
+    padding: 0 10% 0 10%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-unisenai,
+.logo-cdia {
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /*background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+            color: #555;
+            font-size: 0.9em;
+        */
+}
+
+.logo-cdia {
+    /*background-color: #e0eafc;
+            border-color: #b0c4ff;
+            color: #1a3b8b;
+       */
+}
+
+.course-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #1a3b8b;
+}
+
+.main-nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav>ul>li {
+    position: relative;
+}
+
+.defs {
+    --unisenai-primario: rgb(0, 92, 164);
+    --unisenai-primario2: rgb(55, 151, 240);
+    --unisenai-secundario: rgb(30, 34, 70);
+    --unisenai-secundario2: rgb(240, 139, 31);
+    --unisenai-secundario3: rgb(0, 255, 255);
+}
+
+.main-nav {
+    font-weight: bold;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--unisenai-secundario2);
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+}
+
+.main-nav>ul>li>a:hover {
+    background-color: var(--unisenai-secundario);
+    color: var(--unisenai-secundario2);
+    /* color: #ffffff; */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f4f7f6;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    padding: 8px 0;
+    border: 1px solid #eee;
+}
+
+.nav-dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu a {
+    color: #333;
+    padding: 10px 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.submenu a:hover {
+    background-color: #f4f7f6;
+    color: #1a3b8b;
+}

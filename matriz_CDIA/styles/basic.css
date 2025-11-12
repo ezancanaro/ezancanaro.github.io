@@ -1,0 +1,160 @@
+ /*Vars*/
+ body {
+     --unisenai-primario: rgb(0, 92, 164);
+     --unisenai-primario2: rgb(55, 151, 240);
+     --unisenai-secundario: rgb(30, 34, 70);
+     --unisenai-secundario2: rgb(240, 139, 31);
+     --unisenai-secundario3: rgb(0, 255, 255);
+ }
+
+ img,
+ picture,
+ video,
+ canvas,
+ svg {
+     display: block;
+     max-width: 100%;
+ }
+
+ /* 1. Use a more-intuitive box-sizing model */
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+
+ /* 2. Remove default margin */
+ * {
+     margin: 0;
+ }
+
+ /* 3. Enable keyword animations */
+ @media (prefers-reduced-motion: no-preference) {
+     html {
+         interpolate-size: allow-keywords;
+     }
+ }
+
+ body {
+     /* 4. Add accessible line-height */
+     line-height: 1.5;
+     /* 5. Improve text rendering */
+     -webkit-font-smoothing: antialiased;
+     font-family: 'Gotham';
+     margin: 0;
+     background-color: #f4f7f6;
+     color: #333;
+ }
+
+ /* 6. Improve media defaults */
+ img,
+ picture,
+ video,
+ canvas,
+ svg {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ /* 7. Inherit fonts for form controls */
+ input,
+ button,
+ textarea,
+ select {
+     font: inherit;
+ }
+
+ /* 8. Avoid text overflows */
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     overflow-wrap: break-word;
+ }
+
+ /* 9. Improve line wrapping */
+ p {
+     text-wrap: pretty;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     text-wrap: balance;
+ }
+
+ /*
+  10. Create a root stacking context
+*/
+ #root,
+ #__next {
+     isolation: isolate;
+ }
+
+ @font-face {
+     font-family: 'Gotham';
+     src: url('Gotham Black.otf');
+     font-weight: 900;
+ }
+
+ @font-face {
+     font-family: 'Gotham';
+     src: url('Gotham Light.otf');
+     font-weight: normal;
+ }
+
+ @font-face {
+     font-family: 'Gotham';
+     src: url('Gotham Medium.otf');
+     font-weight: bold;
+ }
+
+ body {}
+
+ svg {
+     font-family: 'Gotham';
+     /*
+        width: 100%;
+        height: auto;
+        */
+ }
+
+ /* --- Responsividade --- */
+ @media (max-width: 768px) {
+     .page-header h2 {
+         font-size: 2em;
+     }
+
+     .course-highlights {
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     .highlight-box {
+         min-width: 100%;
+     }
+
+     .curriculum-section {
+         padding: 20px;
+     }
+
+     .svg-placeholder {
+         min-height: 300px;
+     }
+
+     .header-container {
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .main-nav ul {
+         gap: 10px;
+     }
+ }
